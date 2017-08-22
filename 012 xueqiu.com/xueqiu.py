@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+#!/usr/bin/env python3
 # @Date    : 2016-05-29 23:53:42
 # @Author  : xchaoinfo (xchaoinfo@qq.com)
 # @Link    : https://github.com/xchaoinfo
@@ -56,7 +57,7 @@ def login(telephone, password):
     if res == []:
         print("登录失败，请检查你的手机号和密码输入是否正确")
     else:
-        print('欢迎使用 xchaoinfo 写的模拟登录 \n 你的用户 id 是：%s, 你的用户名是：%s' % (res[0]))
+        print('欢迎使用 xchaoinfo 写的模拟登录 \n 你的用户 id 是：%s, 你的用户名是：%s' % (str(res[0][0]),str(res[0][1])))
 
 
 if __name__ == '__main__':
